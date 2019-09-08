@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Denis Filatov](https://up.htmlacademy.ru/htmlcss/26/user/50775).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Остаповец (https://htmlacademy.ru/profile/seraphim)
 
 ---
 
