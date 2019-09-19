@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Техномарт»</title>
   </head>
-  <body>
-    
+  <body>    
+<!-- ШАПКА -->
   	<header>
   		<div>
-  			<a href="index.html"><img src="img/logo-header.png" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»"></a>
+  			<a href="index.html">
+          Техномарт
+        </a>
   			<ul>
   				<li>
             <img src="img/icons/icon-search.svg" width="17" height="17" alt="Поиск">
@@ -31,25 +33,17 @@
   		  <p>
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-
 <!-- АДРЕС И ТЕЛЕФОН -->
-
   			<div>
           <div>
-            <p>
-              <img src="img/icons/icon-phone.svg" width="19" height="19" alt="Телефон">
-              +7 (812) 555-05-55
-            </p>
+            <img src="img/icons/icon-phone.svg" width="19" height="19" alt="Телефон">
+            +7 (812) 555-05-55
           </div>
           <div>
-            <p>
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </div>
         </div>
-
 <!-- ЛОГИН -->
-
         <div>
     			<button type="button">
             <img src="img/icons/profile-login.svg" width="20" height="17" alt="Войти">
@@ -60,9 +54,7 @@
           </button>
         </div>
   		</div>
-
 <!-- НАВИГАЦИЯ -->
-
       <nav>
         <ul>
           <li>
@@ -103,17 +95,12 @@
         </ul>
       </nav>
   	</header>
-
+<!-- МЭЙН -->
   	<main>
-
 <!-- СЛАЙДЫ И КАРУСЕЛЬ -->
-
 <!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
-
 <!-- ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ -->
-
 <!-- СЕРВИСЫ -->
-
   		<div>
   			<div>
   				<h2>
@@ -154,13 +141,14 @@
             Заблудились? Напишите нам!
           </button>
   			</div>
-  		</div>
-  		
+  		</div>  		
   	</main>
-
+<!-- ФУТЕР -->    
     <footer>
       <div>
-        <a href="index.html"><img src="img/logo-footer.png" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»"></a>
+        <a href="index.html">
+          Техномарт
+        </a>
         <div>
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -266,44 +254,42 @@
         </div>
       </div>
     </footer>
-
 <!-- ВСПЛЫВАЮЩЕЕ ОКНО "ОБРАТНАЯ СВЯЗЬ" -->
-
     <section>
-      <h2>
+      <h2 class="visually-hidden">
         Напишите нам!
       </h2>
-      <p>
-        Ваше имя:
-      </p>
-
-<!-- ТУТ БУДЕТ ФОРМА -->
-
-      <p>
-        Ваш e-mail:
-      </p>
-
-<!-- ТУТ БУДЕТ ФОРМА -->
-
-      <p>
-        Текст письма:
-      </p>
-
-<!-- ТУТ БУДЕТ ФОРМА -->
-
-      <button type="button">
-        Отправить
-      </button>
-      <button type="button">
-        <img src="img/icons/button-close.svg" width="21" height="21" alt="Закрыть окно">
-        Закрыть окно
-      </button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">
+            Ваше имя:
+          </label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">
+            Ваш e-mail:
+          </label>
+          <input type="text" name="email" id="email" placeholder="email@example.ru">
+        </p>
+        <p>
+          <label for="mail-text">
+            Текст письма:
+          </label>
+          <textarea name="mail-text" id="mail-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">
+          Отправить
+        </button>
+        <button type="button">
+          <img src="img/icons/button-close.svg" width="21" height="21" alt="Закрыть окно">
+          Закрыть окно
+        </button>
+      </form>
     </section>
-
 <!-- ВСПЛЫВАЮЩЕЕ ОКНО С КАРТОЙ -->
-
     <section>
-      <h2>
+      <h2 class="visually-hidden">
         Адрес интернет-магазина
       </h2>
       <img src="img/map-full.png" width="940" height="446" alt="Интернет-магазин «Техномарт» г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -312,6 +298,5 @@
         Закрыть окно
       </button>
     </section>
-
   </body>
 </html>
