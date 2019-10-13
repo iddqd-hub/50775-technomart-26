@@ -60,7 +60,7 @@ body {
 	padding: 0;
 	margin: 0;
 
-	font-family: "Cuprum", Arial, sans-serif;;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
@@ -81,8 +81,19 @@ img {
 .site-nav,
 .delivery-partners,
 .footer-nav ul,
-.footer-social ul {
+.footer-social ul,
+.brands-list {
 	list-style: none;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .button {
@@ -364,7 +375,7 @@ input[type="radio"].visually-hidden {
 	padding-left: 53px;
 }
 
-.contacts {
+.header-contacts {
 	width: 270px;
 	margin-left: 20px;
 }
@@ -421,8 +432,6 @@ input[type="radio"].visually-hidden {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	margin: 0;
-
-	cursor: pointer;
 }
 
 .sign-in {
@@ -500,7 +509,173 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, .5);
 }
 
-/*О КОМПАНИИ*/
+/*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+
+.popular-brands {
+	margin-bottom: 85px;
+}
+
+.popular-brands-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: #f9f5f0;
+}
+
+.popular-brands-header h2 {
+	font-size: 30px;
+	line-height: 30px;
+
+	color: #32425c;
+	
+	margin: 0;
+	margin-left: 30px;
+}
+
+.popular-brands-header .button {
+	width: 253px;
+
+	line-height: 18px;
+
+	margin-right: 24px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.brands-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin: 0;
+}
+
+.brands-list-item {
+	margin-top: 20px;
+}
+
+.brands-list-item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 220px;
+	height: 145px;
+
+	border: 1px solid #ebebeb;
+}
+
+.brands-list-item a:hover {
+	border: none;
+
+	box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+}
+
+.brands-list-item a:active {
+	border: none;
+
+	box-shadow: 0 4px 10px rgba(41, 52, 73, .5);
+}
+
+.brands-list-item a:active img {
+	opacity: .3;
+}
+
+/*ИНФОРМАЦИЯ О КОМПАНИИ*/
+
+.company-information {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 86px;
+}
+
+.company-information h2 {
+	font-size: 30px;
+	line-height: 30px;
+
+	text-transform: uppercase;
+
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.about-company {
+	width: 560px;
+}
+
+.about-company p,
+.contacts p {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-style: normal;
+
+	font-size: 13px;
+	line-height: 24px;
+
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.about-company p:last-of-type {
+	margin-bottom: 25px;
+}
+
+.about-company .button {
+	width: 220px;
+
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.delivery-partners {
+	font-size: 18px;
+	line-height: 24px;
+
+	padding: 0;
+	padding-left: 36px;
+
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+.delivery-partners li {
+	position: relative;
+
+	margin-bottom: 15px;
+}
+
+.delivery-partners li:last-child {
+	margin-bottom: 0;
+}
+
+.delivery-partners li::before {
+	position: absolute;
+	content: "";
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #ee3643;
+
+	top: calc(50% - 1px);
+	left: -36px;
+}
+
+.contacts {
+	width: 300px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts p {
+	margin-bottom: 34px;
+}
+
+.contacts img {
+	margin-bottom: 50px;
+}
 
 .about-company .button {
 	line-height: 18px;
