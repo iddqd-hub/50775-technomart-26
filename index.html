@@ -69,7 +69,9 @@
                 <!-- АДРЕС И ТЕЛЕФОН -->
                 <div class="header-contacts">
                     <div class="shop-telephone">
-                        +7 (812) 555-05-55
+                        <a href="tel:+78125550555">
+                            +7 (812) 555-05-55
+                        </a>
                     </div>
                     <div class="shop-address">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -77,7 +79,7 @@
                 </div>
                 <!-- ЛОГИН -->
                 <div class="user-login">
-                    <button class="login-button sign-in" type="button">
+                    <a class="login-button sign-in" href="#">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                             <g>
                                 <polygon fill="#32425C" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
@@ -86,10 +88,10 @@
                             v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
                         </svg>
                         Войти
-                    </button>
-                    <button class="login-button sign-up" type="button">
+                    </a>
+                    <a class="login-button sign-up" href="#">
                         Регистрация
-                    </button>
+                    </a>
                 </div>
             </div>
             <!-- НАВИГАЦИЯ -->
@@ -137,9 +139,137 @@
         <main>
             <!-- СЛАЙДЫ И КАРУСЕЛЬ -->
             <!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
+            <section class="popular-goods container">
+                <div class="popular-header">
+                    <h2>
+                        Популярные товары:
+                    </h2>
+                    <a href="" class="button">
+                        Все популярные товары
+                    </a>
+                </div>
+                <ul class="popular-list goods">
+                    <li class="block-list-item">
+                        <div class="actions">
+                            <a href="#" class="buy">
+                                Купить
+                            </a>
+                            <a href="#" class="add-bookmark">
+                                В закладки
+                            </a>
+                        </div>
+                        <h3 class="catalog-item-title">
+                            <span class="title-type">
+                                Перфоратор BOSH
+                            </span>
+                            <span class="title-model">
+                                GFG 9000
+                            </span>
+                        </h3>
+                        <div class="catalog-item-image">
+                            <img src="img/catalog-item-4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
+                        </div>
+                        <p class="prices">
+                            <span class="discount">
+                                32500 р.
+                            </span>
+                            <span class="price">
+                                25500 р.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="block-list-item">
+                        <div class="actions">
+                            <a href="#" class="buy">
+                                Купить
+                            </a>
+                            <a href="#" class="add-bookmark">
+                                В закладки
+                            </a>
+                        </div>
+                        <h3 class="catalog-item-title">
+                            <span class="title-type">
+                                Перфоратор BOSH
+                            </span>
+                            <span class="title-model">
+                                GFG 3000
+                            </span>
+                        </h3>
+                        <div class="catalog-item-image">
+                            <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
+                        </div>
+                        <p class="prices">
+                            <span class="discount">
+                                22500 р.
+                            </span>
+                            <span class="price">
+                                15500 р.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="block-list-item">
+                        <div class="actions">
+                            <a href="#" class="buy">
+                                Купить
+                            </a>
+                            <a href="#" class="add-bookmark">
+                                В закладки
+                            </a>
+                        </div>
+                        <h3 class="catalog-item-title">
+                            <span class="title-type">
+                                Перфоратор BOSH
+                            </span>
+                            <span class="title-model">
+                                GFG 6000
+                            </span>
+                        </h3>
+                        <div class="catalog-item-image">
+                            <img src="img/catalog-item-3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
+                        </div>
+                        <p class="prices">
+                            <span class="discount">
+                                30500 р.
+                            </span>
+                            <span class="price">
+                                25500 р.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="block-list-item new">
+                        <div class="actions">
+                            <a href="#" class="buy">
+                                Купить
+                            </a>
+                            <a href="#" class="add-bookmark">
+                                В закладки
+                            </a>
+                        </div>
+                        <h3 class="catalog-item-title">
+                            <span class="title-type">
+                                Перфоратор BOSH
+                            </span>
+                            <span class="title-model">
+                                GFG 2000
+                            </span>
+                        </h3>
+                        <div class="catalog-item-image">
+                            <img src="img/catalog-item-2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
+                        </div>
+                        <p class="prices">
+                            <span class="discount">
+                                22500 р.
+                            </span>
+                            <span class="price">
+                                12500 р.
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
             <!-- ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ -->
             <section class="popular-brands container">
-                <div class="popular-brands-header">
+                <div class="popular-header">
                     <h2>
                         Популярные производители:
                     </h2>
@@ -147,7 +277,7 @@
                         Все производители
                     </a>
                 </div>
-                <ul class="brands-list">
+                <ul class="popular-list brands">
                     <li class="brands-list-item">
                         <a href="#">
                             <img src="img/brands/bosch.png" width="126" height="37" alt="Bosh">
@@ -252,9 +382,9 @@
                         заехав в наш офис:
                     </p>
                     <img src="img/map-crop.png" width="300" height="158" alt="Интернет-магазин «Техномарт» г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-                    <button class="button" type="button">
-                    Заблудились? Напишите нам!
-                    </button>
+                    <a class="button" href="img/map-full.png">
+                        Заблудились? Напишите нам!
+                    </a>
                 </div>
             </div>
         </main>

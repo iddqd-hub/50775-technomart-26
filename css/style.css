@@ -82,7 +82,7 @@ img {
 .delivery-partners,
 .footer-nav ul,
 .footer-social ul,
-.brands-list {
+.popular-list {
 	list-style: none;
 	padding: 0;
 }
@@ -383,15 +383,17 @@ input[type="radio"].visually-hidden {
 .shop-telephone {
 	position: relative;
 
-	color: #ee3643;
-	font-size: 21px;
-	line-height: 21px;
-
 	border: 3px solid #fff;
 
 	padding-top: 9px;
 	padding-bottom: 9px;
 	padding-left: 71px;
+}
+
+.shop-telephone a {
+	color: #ee3643;
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .shop-telephone::before {
@@ -415,6 +417,10 @@ input[type="radio"].visually-hidden {
 .user-login {
 	width: 285px;
 	margin-left: 69px;
+	margin-bottom: 30px;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .login-button {
@@ -435,7 +441,6 @@ input[type="radio"].visually-hidden {
 }
 
 .sign-in {
-	margin-right: 10px;
 	padding-left: 45px;
 	padding-right: 27px;
 
@@ -509,13 +514,152 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, .5);
 }
 
+/*ПОПУЛЯРНЫЕ ТОВАРЫ*/
+
+.popular-goods {
+	margin-bottom: 20px;
+}
+
+.block-list-item {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	width: 220px;
+
+	font-weight: 600;
+
+	border: 1px solid #ebebeb;
+
+	margin-top: 20px;
+}
+
+.block-list-item .actions {
+	display: none;
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 218px;
+	padding: 40px 0;
+
+	background-color: #fff;
+
+	text-transform: uppercase;
+}
+
+.block-list-item:hover .actions {
+	display: block;
+}
+
+.actions .buy,
+.actions .add-bookmark {
+	display: block;
+
+	width: 135px;
+	padding: 10px 0;
+	margin: 0 auto;
+
+
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+
+	background-color: #63a63e;
+  	border-radius: 3px;
+
+  	margin-bottom: 7px;
+}
+
+.actions .buy {
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.actions .add-bookmark {
+	color: #63a63e;
+
+	background-color: #ffffff;
+  	border: 3px solid #63a63e;
+
+  	padding: 7px 0;
+}
+
+.catalog-item-image {
+	order: -1;
+
+	height: 170px;
+}
+
+.catalog-item-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 18px;
+	line-height: 20px;
+
+	margin: 0;
+	margin-bottom: 17px;
+}
+
+.prices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 18px;
+	
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.prices .discount {
+	color: #a9a9a9;
+	text-decoration: line-through;
+
+	margin-bottom: 13px;
+}
+
+.prices .price {
+	width: 117px;
+
+	color: #fff;
+	text-align: center;
+	
+	padding: 10px 0;
+
+	background-color: #ee3643;
+}
+
+.new::after {
+	position: absolute;
+	content:"";
+
+	width: 60px;
+	height: 59px;
+
+	top: -1px;
+	right: -1px;
+
+	background: url("../img/new flag.png") no-repeat;
+}
+
+.block-list-item:hover {
+	border: 1px solid #fff;
+
+	box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+}
+
 /*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
 
 .popular-brands {
 	margin-bottom: 85px;
 }
 
-.popular-brands-header {
+.popular-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -523,7 +667,7 @@ input[type="radio"].visually-hidden {
 	background-color: #f9f5f0;
 }
 
-.popular-brands-header h2 {
+.popular-header h2 {
 	font-size: 30px;
 	line-height: 30px;
 
@@ -533,7 +677,7 @@ input[type="radio"].visually-hidden {
 	margin-left: 30px;
 }
 
-.popular-brands-header .button {
+.popular-header .button {
 	width: 253px;
 
 	line-height: 18px;
@@ -543,7 +687,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 25px;
 }
 
-.brands-list {
+.popular-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
